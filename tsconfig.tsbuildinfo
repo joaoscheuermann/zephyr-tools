@@ -1,1 +1,1 @@
-{"root":["./src/index.ts","./src/commands/hello/index.ts","./src/commands/hello/world.ts"],"version":"5.6.2"}
+{"root":["./src/index.ts","./src/api/atlassian/index.ts","./src/api/zephyr/index.ts","./src/commands/auth/index.ts","./src/commands/bulk/create.ts","./src/types/index.ts","./src/utils/index.ts"],"version":"5.6.2"}
