@@ -1,7 +1,7 @@
 {
   "name": "zephyr-tools",
   "description": "A CLI to help improving the workflow when dealing with Zephyr",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "joaoscheuermann",
   "bin": {
     "zephyr": "./bin/run.js"

@@ -20,7 +20,7 @@ $ npm install -g zephyr-tools
 $ zephyr COMMAND
 running command...
 $ zephyr (--version)
-zephyr-tools/0.0.0 win32-x64 node-v20.9.0
+zephyr-tools/1.0.0 win32-x64 node-v20.9.0
 $ zephyr --help [COMMAND]
 USAGE
   $ zephyr COMMAND
@@ -65,7 +65,7 @@ EXAMPLES
   hello friend from oclif! (./src/commands/hello/index.ts)
 ```
 
-_See code: [src/commands/hello/index.ts](https://github.com/joaoscheuermann/zephyr-tools/blob/v0.0.0/src/commands/hello/index.ts)_
+_See code: [src/commands/hello/index.ts](https://github.com/joaoscheuermann/zephyr-tools/blob/v1.0.0/src/commands/hello/index.ts)_
 
 ## `zephyr hello world`
 
@@ -83,7 +83,7 @@ EXAMPLES
   hello world! (./src/commands/hello/world.ts)
 ```
 
-_See code: [src/commands/hello/world.ts](https://github.com/joaoscheuermann/zephyr-tools/blob/v0.0.0/src/commands/hello/world.ts)_
+_See code: [src/commands/hello/world.ts](https://github.com/joaoscheuermann/zephyr-tools/blob/v1.0.0/src/commands/hello/world.ts)_
 
 ## `zephyr help [COMMAND]`
 
