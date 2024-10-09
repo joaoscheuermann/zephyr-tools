@@ -20,7 +20,7 @@ $ npm install -g zephyr-tools
 $ zephyr COMMAND
 running command...
 $ zephyr (--version)
-zephyr-tools/1.0.0 win32-x64 node-v20.9.0
+zephyr-tools/1.0.0 linux-x64 node-v18.20.4
 $ zephyr --help [COMMAND]
 USAGE
   $ zephyr COMMAND
@@ -29,8 +29,6 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`zephyr hello PERSON`](#zephyr-hello-person)
-* [`zephyr hello world`](#zephyr-hello-world)
 * [`zephyr help [COMMAND]`](#zephyr-help-command)
 * [`zephyr plugins`](#zephyr-plugins)
 * [`zephyr plugins add PLUGIN`](#zephyr-plugins-add-plugin)
@@ -42,48 +40,6 @@ USAGE
 * [`zephyr plugins uninstall [PLUGIN]`](#zephyr-plugins-uninstall-plugin)
 * [`zephyr plugins unlink [PLUGIN]`](#zephyr-plugins-unlink-plugin)
 * [`zephyr plugins update`](#zephyr-plugins-update)
-
-## `zephyr hello PERSON`
-
-Say hello
-
-```
-USAGE
-  $ zephyr hello PERSON -f <value>
-
-ARGUMENTS
-  PERSON  Person to say hello to
-
-FLAGS
-  -f, --from=<value>  (required) Who is saying hello
-
-DESCRIPTION
-  Say hello
-
-EXAMPLES
-  $ zephyr hello friend --from oclif
-  hello friend from oclif! (./src/commands/hello/index.ts)
-```
-
-_See code: [src/commands/hello/index.ts](https://github.com/joaoscheuermann/zephyr-tools/blob/v1.0.0/src/commands/hello/index.ts)_
-
-## `zephyr hello world`
-
-Say hello world
-
-```
-USAGE
-  $ zephyr hello world
-
-DESCRIPTION
-  Say hello world
-
-EXAMPLES
-  $ zephyr hello world
-  hello world! (./src/commands/hello/world.ts)
-```
-
-_See code: [src/commands/hello/world.ts](https://github.com/joaoscheuermann/zephyr-tools/blob/v1.0.0/src/commands/hello/world.ts)_
 
 ## `zephyr help [COMMAND]`
 
