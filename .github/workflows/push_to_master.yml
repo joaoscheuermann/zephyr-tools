@@ -1,5 +1,5 @@
 # test
-name: version, tag and github release
+name: Craete a release and publish to NPM
 
 on:
   push:
@@ -67,11 +67,8 @@ jobs:
         with:
           node-version: 'latest'
 
-      - name: Install dependencies
-        run: npm install
-
-      - name: Publish to NPM
-        run: npm publish
+      - run: npm ci
+      - run: npm publish --provenance --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 

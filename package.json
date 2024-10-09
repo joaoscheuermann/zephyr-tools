@@ -4,7 +4,7 @@
   "version": "1.1.1",
   "author": "joaoscheuermann",
   "bin": {
-    "zephyr": "./bin/run.js"
+    "zephyr-tools": "./bin/run.js"
   },
   "bugs": "https://github.com/joaoscheuermann/zephyr-tools/issues",
   "dependencies": {
