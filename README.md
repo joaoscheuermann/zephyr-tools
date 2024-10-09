@@ -23,7 +23,7 @@ $ npm install -g zephyr-tools
 $ zephyr COMMAND
 running command...
 $ zephyr (--version)
-zephyr-tools/1.1.1 win32-x64 node-v20.9.0
+zephyr-tools/1.1.2 win32-x64 node-v20.9.0
 $ zephyr --help [COMMAND]
 USAGE
   $ zephyr COMMAND
@@ -44,8 +44,8 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`zephyr hello PERSON`](#zephyr-hello-person)
-* [`zephyr hello world`](#zephyr-hello-world)
+* [`zephyr auth`](#zephyr-auth)
+* [`zephyr bulk create`](#zephyr-bulk-create)
 * [`zephyr help [COMMAND]`](#zephyr-help-command)
 * [`zephyr plugins`](#zephyr-plugins)
 * [`zephyr plugins add PLUGIN`](#zephyr-plugins-add-plugin)
@@ -58,47 +58,45 @@ USAGE
 * [`zephyr plugins unlink [PLUGIN]`](#zephyr-plugins-unlink-plugin)
 * [`zephyr plugins update`](#zephyr-plugins-update)
 
-## `zephyr hello PERSON`
+## `zephyr auth`
 
-Say hello
+Authenticates with Zephyr API, see how you can generate a token here: https://support.smartbear.com/zephyr-scale-cloud/docs/en/rest-api/generating-api-access-tokens.html
 
 ```
 USAGE
-  $ zephyr hello PERSON -f <value>
+  $ zephyr auth
 
-ARGUMENTS
-  PERSON  Person to say hello to
+DESCRIPTION
+  Authenticates with Zephyr API, see how you can generate a token here:
+  https://support.smartbear.com/zephyr-scale-cloud/docs/en/rest-api/generating-api-access-tokens.html
+
+EXAMPLES
+  $ zephyr auth
+```
+
+_See code: [src/commands/auth/index.ts](https://github.com/joaoscheuermann/zephyr-tools/blob/v1.1.2/src/commands/auth/index.ts)_
+
+## `zephyr bulk create`
+
+describe the command here
+
+```
+USAGE
+  $ zephyr bulk create -f <value> -t test-case|test-cycle
 
 FLAGS
-  -f, --from=<value>  (required) Who is saying hello
+  -f, --file=<value>   (required)
+  -t, --type=<option>  (required) Type of bulk create
+                       <options: test-case|test-cycle>
 
 DESCRIPTION
-  Say hello
+  describe the command here
 
 EXAMPLES
-  $ zephyr hello friend --from oclif
-  hello friend from oclif! (./src/commands/hello/index.ts)
+  $ zephyr bulk create
 ```
 
-_See code: [src/commands/hello/index.ts](https://github.com/joaoscheuermann/zephyr-tools/blob/v1.1.1/src/commands/hello/index.ts)_
-
-## `zephyr hello world`
-
-Say hello world
-
-```
-USAGE
-  $ zephyr hello world
-
-DESCRIPTION
-  Say hello world
-
-EXAMPLES
-  $ zephyr hello world
-  hello world! (./src/commands/hello/world.ts)
-```
-
-_See code: [src/commands/hello/world.ts](https://github.com/joaoscheuermann/zephyr-tools/blob/v1.1.1/src/commands/hello/world.ts)_
+_See code: [src/commands/bulk/create.ts](https://github.com/joaoscheuermann/zephyr-tools/blob/v1.1.2/src/commands/bulk/create.ts)_
 
 ## `zephyr help [COMMAND]`
 
