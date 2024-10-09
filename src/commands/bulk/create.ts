@@ -42,6 +42,8 @@ export default class BulkCreate extends Command {
     assert(zephyrToken)
     assert(zephyrProjectKey)
 
+    this.log('::: Bulk create starting! :::')
+
     const tests = await utils.spinner(
       'Parsing file...',
       'Successfully parsed file!',

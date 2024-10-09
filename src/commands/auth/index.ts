@@ -15,8 +15,6 @@ export default class Auth extends Command {
 
   static override examples = ['<%= config.bin %> <%= command.id %>']
 
-  // ATATT3xFfGF0YT4lmBTOT3M0Ij03u70o0Zsw1cLvrqMTO2MIbmYkewWiaQsZDVSFDqqNkmO1rG7Kf9JxLfpbhWE55_sE4y8qIc4f4cllPv_7UqR48Ncu1MstyEo9aRe9gpOEVXKvoHYOUNBjl7pjm59JbMf0JG3hau-6rQRR6TuHtKfM3b1xJSg=BCACD630
-
   public async run(): Promise<void> {
     const data = utils.readLocalDataFile()
 
