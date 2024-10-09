@@ -50,6 +50,42 @@ export interface AtlassianAccount {
   timeZone: string
 }
 
+export interface ZephyrTestPlan {
+  id: number,
+  key: string,
+  self: string,
+}
+
+export interface ZerphyrTestCaseStep {
+  inline: {
+    description: string,
+    expectedResult: string,
+  }
+}
+
+export interface ZerphyrTestCaseRefferenceStep {
+  testCase: {
+    testCaseKey: string
+  }
+}
+
+export interface LocalTestPlan {
+  folder: number | string,
+  name: string,
+  objective?: string,
+  precondition?: string,
+  steps: (LocalTestCaseRefferenceStep | LocalTestPlanStep)[]
+}
+
+export interface LocalTestPlanStep {
+  description: string,
+  expected: string,
+}
+
+export interface LocalTestCaseRefferenceStep {
+  key: string
+}
+
 export interface LocalData {
   atlassian: {
     account: AtlassianAccount | null,
